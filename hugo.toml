@@ -2,7 +2,9 @@ baseURL = 'https://sachit3022.github.io/other-blog/'
 languageCode = 'en-us'
 title = ' Coding 👨‍💻 Coffee ☕ Life'
 comments = false                            # disable comments for a specific page
-math = true        
+math = true      
+enableEmoji = true
+
                          # enable KaTeX math typesetting for a specific pagebaseURL = "https://hugo-paper.vercel.app/"
 
 author = "Sachit gaudi"
@@ -35,6 +37,11 @@ category = "categories"
 tag = "tags"
 series = "series"
 
+[[module.mounts]]
+source = 'static'
+target = 'static'
+
+
 [privacy]
 
   [privacy.vimeo]
@@ -61,3 +68,21 @@ series = "series"
 
   [services.twitter]
     disableInlineCSS = true
+
+[markup.highlight]
+      codeFences = true
+      guessSyntax = true
+      hl_Lines = ""
+      lineNoStart = 1
+      lineNos = false
+      lineNumbersInTable = true
+      tabWidth = 4
+      noClasses = true
+      style = "xcode"
+
+  
+[markup.tableOfContents]
+  startLevel = 3
+  endLevel = 5
+  ordered = false
+  tocMinWordCount = 1
