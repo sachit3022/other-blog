@@ -1,7 +1,7 @@
 +++
 author = "Sachit gaudi"
 title = "Tiktok online assesment"
-date = "2019-03-10"
+date = "2024-01-15"
 description = "Solving TikTok coding questions"
 math = true
 pygmentsUseClasses=true

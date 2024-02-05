@@ -37,9 +37,7 @@ category = "categories"
 tag = "tags"
 series = "series"
 
-[[module.mounts]]
-source = 'static'
-target = 'static'
+
 
 
 [privacy]
