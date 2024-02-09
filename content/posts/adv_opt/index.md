@@ -232,7 +232,11 @@ Assumptions
 - function is Lipsitz smooth ( $|| \nabla f(x_1)  -  \nabla f(x_2) ||_2 \le L|| x_1 - x_2||_2$)
 - function is convex, ( derivative slope line is the lower bound everywhere)
 - constraint set is linear ( can be extended to non-linear )
-
+$$
+\begin{aligned}y\\
+f\left( x^{\ast }\right) \geq f\ln  >t+\nabla f\left( x\right) ^{T}\left( x-x^{\ast }\right)
+\end{aligned}
+$$
 
 ### Example problem
 
