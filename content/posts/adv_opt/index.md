@@ -237,16 +237,16 @@ We start the procedure with x in the set $\mathcal{C}$, if the intial x is rando
 
 $$
 \begin{aligned}\\
-f\left( x^{+ }\right) \leq f\left( x \right) + \nabla f\left( x\right) ^{T}\left( x-x^{+ }\right) +\frac{1}{2} (x - x^{+ })^TH (x - x^{+ })
+f\left( x^{+ }\right) \leq f\left( x \right) + \nabla f\left( x\right) ^{T}\left( x^{+ } - x \right) +\frac{1}{2} (x - x^{+ })^TH (x - x^{+ })
 \end{aligned}
 $$
 Applying Lipsitz smoothness
 $$
 \begin{aligned}\\
-f\left( x^{+ }\right) \leq f\left( x \right) + \nabla f\left( x\right) ^{T}\left( x-x^{+ }\right) +\frac{1}{2} ||x - x^{+ }||_2^2
+f\left( x^{+ }\right) \leq f\left( x \right) + \nabla f\left( x\right) ^{T}\left( x^{+ } - x \right) +\frac{L}{2} ||x - x^{+ }||_2^2
 \end{aligned}
 $$
-Let P be the projection matrix onto the subspace, from linear algebra we know that $P^2 = P, P^T = P$ and $Px =x; x \in \mathcal{C}$.
+Let P be the projection matrix onto the subspace, from linear algebra we know that $P^2 = P, P^T = P$ and $Px =x; x \in \mathcal{C}$, P is positive semi definite.
 
 In the gradient descent we update the step as follows $x^+ = x - \alpha \nabla f(x)$, in the PGD we add a new projeciton matrix, P, so the update step transforms as $x^+ = P(x - \alpha \nabla f(x))$ as from the property of the projection matrix
 $x^+ = x - P \alpha \nabla f(x)$, As you can already see this will stop when $\nabla f(x) \in \mathcal{N(C)}$.
@@ -254,13 +254,35 @@ $x^+ = x - P \alpha \nabla f(x)$, As you can already see this will stop when $\n
 Lets substitue the step in the equation
 $$
 \begin{aligned}\\
-f\left( x^{+ }\right) \leq f\left( x \right) + \nabla f\left( x\right) ^{T} P\alpha \nabla f(x) +\frac{1}{2} (x - x^{+ })^T (x - x^{+ })
+f\left( x^{+ }\right) \leq f\left( x \right)  - \nabla f\left( x\right) ^{T} P\alpha \nabla f(x)  +\frac{L}{2} || P\alpha \nabla f(x)||_2^2 \\\\
+f\left( x^{+ }\right) \leq f\left( x \right)  - \nabla f\left( x\right) ^{T} P\alpha \nabla f(x)  + \alpha^2 \frac{L}{2} \nabla f\left( x\right) ^{T} P\nabla f(x) \\\\
+f\left( x^{+ }\right) \leq f\left( x \right)  -  \alpha(1 - \frac{\alpha L}{2} ) \nabla f\left( x\right) ^{T} P\nabla f(x) \\\\
 \end{aligned}
 $$
 
+We know that P is positive semi definite, so
+$\nabla f\left( x\right) ^{T} P\nabla f(x) \ge 0$ and if $\alpha \le \frac{1}{L}$ 
 
+$$
+\begin{aligned}\\
+f\left( x^{+ }\right) \leq f\left( x \right) -  \frac{\alpha}{2} \nabla f\left( x\right) ^{T} P\nabla f(x) \\\ \tag{8}
+\end{aligned}
+$$
+One thing to notice is function value is always decreasing.
 
+Now with the assumption of convexity, we will link the above equation to the optimun value. Let's derive from the convex assumption.
+$$
+\begin{aligned}\\
+f(x) \leq f(x^{\ast}) +  \nabla f\left( x\right) ^{T}(x - x^{\ast}) \\\ 
+f\left( x^{+ }\right) \leq f(x^{\ast}) +  \nabla f\left( x\right) ^{T}(x - x^{\ast}) - \frac{\alpha}{2} \nabla f\left( x\right) ^{T} P\nabla f(x) \\\ 
+f\left( x^{+ }\right) - f(x^{\ast})  \leq   \nabla f\left( x\right) ^{T}(x - x^{\ast}) - \frac{\alpha}{2} \nabla f\left( x\right) ^{T} P\nabla f(x) \\\\
+f\left( x^{+ }\right) - f(x^{\ast})  \leq   \frac{1}{2\alpha}( ||x-x^{\ast}||_2^2 - || x - \alpha P\nabla f(x) - x^{\ast}||_2^2) \\\
+\sum_k f\left( x^{k }\right) - f(x^{\ast})  \leq \frac{1}{2\alpha}||x^{0} - x^{\ast} || \\\
+f\left( x^{k }\right) - f(x^{\ast})  \leq \frac{1}{2k\alpha}||x^{0} - x^{\ast} ||
+\end{aligned}
+$$
 
+This proves the function is decreasing and the error to the optimal will get smaller and smaller with the number of steps.
 
 ### Example problem
 
