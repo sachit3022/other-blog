@@ -202,19 +202,70 @@ new_x = np.linalg.inv(new_A)@ (new_y - new_b)
 
 This problem is much simpler problem, the f(x) is linear or the relaxed version of logarithemic exponetiation, alays solving direct constraint optimisation is not possible. So We will work with an iterative approach called Projected Gradient Descent (PGD). The idea is if the x after every iteratation is outside of the feasible space, project it back to the feasible space.
 
-
 ## Projected Gradient Descent
 
+We will make a sketch of the termination criteria, We will write a proof for convergence which follows similar lines of proving convergence of gradient descent. 
 
-We will describe PGD, we will write a proof for convergence and we will make a sketch of the termination criteria. We will follow similar lines of proving convergence of gradient descent. 
-
-
-
-
-
-
-<span id='fig3'><img src="image.png" /></span>
+<center>
+<span id='fig2'>
+<img  src="IMG_894ED9BDAD53-1.jpeg"  style="width:400px"/>
+<figcaption>Convex set green indicates feasible region, shades of red indicate the contour of the objective function, darker indicate low values. The figure showcases the termination condition, when the gradient of optimisation funciton is orthogonal to tangent (gradient is in null space of the tangent plane.)( 1st condition of KKT is met) </figcaption>
+</span>
 </center>
+
+### What is a projection operation
+projection is solving an simpler optimisation problem compared to the initial optimisation, which is done as follows.
+$$
+\begin{align*}
+\min \quad & || x - \tilde{x} ||_2^2 \\\\
+\textrm{s.t.}  \quad & x \in \mathcal{C} \\\\
+\textrm{where} \quad & \tilde{x} = x_t - \alpha \nabla f(x_t)
+\end{align*}
+$$
+
+
+### Proof of convergence
+We will solve for linear case and assume it extends for non linear case or leave the non linear case for the future.
+
+Assumptions
+- funtion is differentiable
+- function is Lipsitz smooth ( $|| \nabla f(x_1)  -  \nabla f(x_2) ||_2 \le L|| x_1 - x_2||_2$)
+- function is convex, ( derivative slope line is the lower bound everywhere)
+- constraint set is linear ( can be extended to non-linear )
+
+
+### Example problem
+
+Sharing the results of the same problem mentioned above This method gives us the same solution as the earlier approaches but is more helpfull for complex functions.
+
+```Python
+for epoch in range(100):
+    x -= 0.01 * (A.T @ c)
+
+    #solving primal projection operation
+    new_x  = cp.Variable(x.shape)
+    objective = cp.Minimize(cp.norm(new_x - x, 2)**2)
+    constraints = [cp.norm_inf(A @ new_x + b) <= eps]
+    prob = cp.Problem(objective, constraints)
+    prob.solve()
+    
+    x = new_x.value  
+print(x)
+``` 
+<center>
+<span id='fig3'>
+<img src="image-1.png" />
+<figcaption> Left most point is the optimal point, showing the convergence of projective gradient descent.
+</span>
+</center>
+
+
+
+
+
+
+## Using optimiation for white-box adverserial attacks
+
 
 <h1 id="references">References<a hidden class="anchor" aria-hidden="true" href="#references">#</a></h1>
 <p>[1] S. Boyd and L. Vandenberghe, Convex Optimization. Cambridge University Press, 2004.</p>
