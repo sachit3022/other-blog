@@ -229,14 +229,38 @@ We will solve for linear case and assume it extends for non linear case or leave
 
 Assumptions
 - funtion is differentiable
-- function is Lipsitz smooth ( $|| \nabla f(x_1)  -  \nabla f(x_2) ||_2 \le L|| x_1 - x_2||_2$)
+- function is Lipsitz smooth ( $|| \nabla f(x_1)  -  \nabla f(x_2) ||_2 \le L|| x_1 - x_2||_2$) ($H \le LI$)
 - function is convex, ( derivative slope line is the lower bound everywhere)
 - constraint set is linear ( can be extended to non-linear )
+
+We start the procedure with x in the set $\mathcal{C}$, if the intial x is random, we can apply the projection that x and chose a point in the convex set.
+
 $$
-\begin{aligned}y\\
-f\left( x^{\ast }\right) \geq f\ln  >t+\nabla f\left( x\right) ^{T}\left( x-x^{\ast }\right)
+\begin{aligned}\\
+f\left( x^{+ }\right) \leq f\left( x \right) + \nabla f\left( x\right) ^{T}\left( x-x^{+ }\right) +\frac{1}{2} (x - x^{+ })^TH (x - x^{+ })
 \end{aligned}
 $$
+Applying Lipsitz smoothness
+$$
+\begin{aligned}\\
+f\left( x^{+ }\right) \leq f\left( x \right) + \nabla f\left( x\right) ^{T}\left( x-x^{+ }\right) +\frac{1}{2} ||x - x^{+ }||_2^2
+\end{aligned}
+$$
+Let P be the projection matrix onto the subspace, from linear algebra we know that $P^2 = P, P^T = P$ and $Px =x; x \in \mathcal{C}$.
+
+In the gradient descent we update the step as follows $x^+ = x - \alpha \nabla f(x)$, in the PGD we add a new projeciton matrix, P, so the update step transforms as $x^+ = P(x - \alpha \nabla f(x))$ as from the property of the projection matrix
+$x^+ = x - P \alpha \nabla f(x)$, As you can already see this will stop when $\nabla f(x) \in \mathcal{N(C)}$.
+
+Lets substitue the step in the equation
+$$
+\begin{aligned}\\
+f\left( x^{+ }\right) \leq f\left( x \right) + \nabla f\left( x\right) ^{T} P\alpha \nabla f(x) +\frac{1}{2} (x - x^{+ })^T (x - x^{+ })
+\end{aligned}
+$$
+
+
+
+
 
 ### Example problem
 
