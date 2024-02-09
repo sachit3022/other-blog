@@ -117,7 +117,7 @@ $$
 \min_{\lambda,\nu} \quad & 2* \epsilon^T \lambda - (b+\epsilon)^T\nu\\\\
 \textrm{s.t.} \quad & v \le 1 + \lambda \\\\
 & A^T\nu = 0 \\\\
-& \lambda \ge 0
+& \lambda \ge 0 \tag{7}
 \end{align*}
 $$
 Now everyhting is Linear, this problem doesnot have a closed form solution but can be solved with any Convex optimisation solver. The question is how can you go back and solve the initial problem from the solution to this problem.
@@ -127,13 +127,91 @@ if $\mu_i \ne 0$, If both are not zero we can't really get the value of y.
 So plug back the indices into $A_ix+b_i = y_i$ this is a new system of equation which will give us the value of x and y.
 
 Now we will go through the implementation of these constrainted optimisation problem for some value of A,b and we emperically say that both will give us the same solution.
+$$
+A = \begin{bmatrix}
+        0.42653338 &  0.01419502 \\\\
+        0.33599965 & 0.34548836 \\\\
+        0.97202155 & 0.2533662  \\\\
+        0.83768142 & 0.13944988 \\\\
+        0.9881595 & 0.68442012 \end{bmatrix}
+b = \begin{bmatrix}
+        0.95011621 \\\\
+        0.62676223 \\\\
+        0.22844751 \\\\
+        0.14841869 \\\\
+        0.09432889 
+    \end{bmatrix} 
+\epsilon = 1
+$$
 
+Solving either directly primal and alternative dual ( we call this alternative because its not exactly dual because we added a new variable y) we get the same solution.
 
+$$
+x = \begin{bmatrix} -1.35816245 \\\\
+        0.36198854\end{bmatrix}
+$$
 
+<table style="width:50%">
+<tr>
+<th style="width:50%"> 
 
+```Python
+import numpy as np
+import cvxpy as cp
+
+x = cp.Variable(x.shape)
+objective = cp.Minimize(c.T @ (A @ x + b))
+constraints = [cp.norm_inf(A @ x + b) <= eps]
+prob = cp.Problem(objective, constraints)
+print(x.value)
+``` 
+</th>
+<th tyle="width:50%">
+    
+```Python
+import numpy as np
+import cvxpy as cp
+
+v = cp.Variable((5, 1))
+l = cp.Variable((5, 1))
+o = np.ones((5,1))*eps*2
+
+#dual form derivied in (7)
+objective = cp.Minimize(   o.T @ l - (eps + b).T @ v )
+constraints = [l>=0,A.T@v==0,v<=l+c]
+prob = cp.Problem(objective, constraints)
+prob.solve()
+
+lam = l.value
+mu =  c+l.value-v.value
+
+#The indices where the constraints are met
+indices = (np.where(lam[:,0]>1e-5) , np.where(mu[:,0]>1e-5))
+
+e = eps* np.ones(b.shape)
+new_A = np.concatenate([A[indices[0]],A[indices[1]]])
+new_b = np.concatenate([b[indices[0]],b[indices[1]]])
+new_y = np.concatenate([e[indices[0]],-e[indices[1]]])
+
+new_x = np.linalg.inv(new_A)@ (new_y - new_b)
+```
+
+</th>
+</tr>
+</table>
+
+This problem is much simpler problem, the f(x) is linear or the relaxed version of logarithemic exponetiation, alays solving direct constraint optimisation is not possible. So We will work with an iterative approach called Projected Gradient Descent (PGD). The idea is if the x after every iteratation is outside of the feasible space, project it back to the feasible space.
 
 
 ## Projected Gradient Descent
+
+
+We will describe PGD, we will write a proof for convergence and we will make a sketch of the termination criteria. We will follow similar lines of proving convergence of gradient descent. 
+
+
+
+
+
 
 <span id='fig3'><img src="image.png" /></span>
 </center>
@@ -141,3 +219,6 @@ Now we will go through the implementation of these constrainted optimisation pro
 <h1 id="references">References<a hidden class="anchor" aria-hidden="true" href="#references">#</a></h1>
 <p>[1] S. Boyd and L. Vandenberghe, Convex Optimization. Cambridge University Press, 2004.</p>
 <p>[2] S. Diamond and S. Boyd, <a href="https://www.cvxpy.org/index.html">&ldquo;CVXPY: A Python-embedded modeling language for convex optimization.&rdquo;.</a> Journal of Machine Learning Research, vol. 17, no. 83, pp. 1–5, 2016.</p>
+<p>[3] Ryantibs, &ldquo;  <a href=" https://www.stat.cmu.edu/~ryantibs/convexopt-F13/scribes/lec6.pdf">Convergence of gradeint descent </a>&ldquo;</p>
+
+
