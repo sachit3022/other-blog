@@ -326,7 +326,7 @@ We began with what seemed like a complex optimization problem. We employed lower
 
 ## Using optimiation for white-box adverserial attacks
 
-Lets design the adverserial attack, The attack will be clear if we write the optimisation equation and we will use PGD to solve all the optimisation equations.
+Let's design the adversarial attack. The attack will be clearer if we write the optimization equation, and we will use PGD to solve all the optimization equations.
 
 <span id='eq9'>
 $$
@@ -336,15 +336,16 @@ $$
 \end{align} \tag{9}
 $$
 </span>
-We can have p = 1,2, $\infty$, the properties of attack and solution change accordingly to the choice of p, we will explain emperically how $\delta$ histogram looks like in case each of the p value.
 
-As with the PGD, we dont have to solve the optimisation. We only need to solve a simpler constrained optimisation.
+We can have $p = 1,2, \infty$. The properties of the attack and solution change accordingly to the choice of $p$. We will empirically explain how the histogram of $\delta$ looks like in each case of the $p$ value.
+
+With PGD, we don't have to solve the optimization. We only need to solve a simpler constrained optimization.
 
 ![PGD](image.png)
 
-The stopping critiea is given by the purtubration when the attack is succesfull. The algorithm 2 and 3 can be solved with by writing the dual and maximising it. but 1 norm is not differentiable so, we dont have a closed form but but we can solve it with regulariser and use bisection method to find right regulariser for the given constriant.
+The stopping criteria is given by the perturbation when the attack is successful. Algorithms $2,\infity$ norm given in Algorithm 2 and 3 respectively can be solved by writing the dual and maximizing it. However, the 1-norm is not differentiable, so we don't have a closed form solution. Instead, we can solve it with regularization and use the bisection method to find the right regularization for the given constraint.
 
-In this post we have choosen $\epsilon$, or the attck radius, but we can write a complex optimisation to choose the smallest episilon possible for the attack to be successfull, but we will leave ADMM, proximal gradient for another post.
+In this post, we have chosen manually $\epsilon$, or the attack radius. However, we can formulate a complex optimization problem to determine the smallest $\epsilon$ possible for the attack to be successful. We will address ADMM and proximal gradient methods in another post.
 
 ### Understanding Norm Minimization in Perturbed Spaces
 
@@ -355,28 +356,36 @@ This was directly adapted from <a href="https://www.youtube.com/watch?v=GxK04B9S
 <figcaption> Figure showing the histogram of purtubations. for all norm-constrainted adverseries  along with the purturbed image.
 </span>
 </center>
-This aspect is well studied, focusing on norm-constrained minimization and adversarial training. The $L_{1}$-norm induces minor changes in pixel values, yet these changes are highly visible in the image. Conversely, the $L_{\infty}$-norm perturbs most pixels by equal values, particularly at the constraint boundary $\epsilon$. In the case of the $L_{2}$-norm, there is an exponential decrease in perturbation values. We can call this biometric of the attack, if you see the purtubation histogram, we can tell, that a perticular attack is godd for changing few pixels vs changing many pixels by in smaller amount.
+This aspect is well studied, focusing on norm-constrained minimization and adversarial training. The $L_{1}$-norm induces minor changes in pixel values, yet these changes are highly visible in the image. Conversely, the $L_{\infty}$-norm perturbs most pixels by equal values, particularly at the constraint boundary $\epsilon$. In the case of the $L_{2}$-norm, there is an exponential decrease in perturbation values. We can call this biometric of the attack. If you observe the perturbation histogram, we can determine whether a particular attack is good for changing few pixels versus changing many pixels but in smaller amounts.
 
-
-In next section, instead of attacking one single image we will design a template $\delta$, of class, which when added to the other images not belonging to classify incorrectly.
+In the next section, instead of attacking one single image, we will design a template $\delta$ of a class, which when added to other images not belonging to the class, will cause them to be incorrectly classified.
 
 ### Adverserial Templates and Attack Accuracy
 | | | |
 |:-------------------------:|:-------------------------:|:-------------------------:|
 | ![L1 cat](image-5.png) | ![L2 Cat](image-3.png) | ![Linf Cat](image-4.png) |
 
-Table: Designed to Fool all the non cat images to cat images with an $\epsilon_1 = 150,\epsilon_2 = 8,\epsilon_{\infty} = 0.2 $ The values are choosen such that the test attack accuracy is close to 90\%. The Top image represents the $\delta$ or the adversery that needs to be added and the bottom plot represent the histogram of pixels.
+
+This Image presents the parameters and visual representations for an adversarial attack designed to fool all non-cat images into being classified as cat images. The top part represents the $\delta$ or the adversary that needs to be added, and the bottom plot represents the histogram of pixels. 
+
+| Parameter       | Value     |
+|-----------------|-----------|
+| $\epsilon_1$    | 150       |
+| $\epsilon_2$    | 8         |
+| $\epsilon_{\infty}$ | 0.2   |
+
+The values are chosen such that the test attack accuracy is close to 90%. 
+
+
 | | | |
 |:-------------------------:|:-------------------------:|:-------------------------:|
 | ![L1 Horse](image-6.png) | ![L2 Horse](image-7.png) | ![Linf Horse](image-8.png) |
 
-Table: Simlar results for Classifying non-horse classes as horse.
-
-
+Image: Similar Results for Classifying Non-Horse Classes as Horse
 
 
 <h1 id="references">References<a hidden class="anchor" aria-hidden="true" href="#references">#</a></h1>
 <p>[1] S. Boyd and L. Vandenberghe, <i>Convex Optimization</i>. Cambridge University Press, 2004.</p>
 <p>[2] S. Diamond and S. Boyd, <a href="https://www.cvxpy.org/index.html"><i>CVXPY: A Python-embedded modeling language for convex optimization.</i></a> Journal of Machine Learning Research, vol. 17, no. 83, pp. 1–5, 2016.</p>
-<p>[3] Ryantibs, <a href="https://www.stat.cmu.edu/~ryantibs/convexopt-F13/scribes/lec6.pdf"><i>Convergence of gradient descent</i></a></p>
+<p>[3] Ryantibs, Convex Optimisation, Fall'13 <a href="https://www.stat.cmu.edu/~ryantibs/convexopt-F13/scribes/lec6.pdf"><i>Convergence of gradient descent</i></a></p>
 <p>[4] Sachit, <a href="https://sachit3022.github.io/other-blog/adv.py"> Code to the adove experiments </a></p>
