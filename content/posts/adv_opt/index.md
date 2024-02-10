@@ -379,4 +379,4 @@ Table: Simlar results for Classifying non-horse classes as horse.
 <p>[1] S. Boyd and L. Vandenberghe, <i>Convex Optimization</i>. Cambridge University Press, 2004.</p>
 <p>[2] S. Diamond and S. Boyd, <a href="https://www.cvxpy.org/index.html"><i>CVXPY: A Python-embedded modeling language for convex optimization.</i></a> Journal of Machine Learning Research, vol. 17, no. 83, pp. 1–5, 2016.</p>
 <p>[3] Ryantibs, <a href="https://www.stat.cmu.edu/~ryantibs/convexopt-F13/scribes/lec6.pdf"><i>Convergence of gradient descent</i></a></p>
-<p>[4] Sachit, <a href="static/adv.py"> Code to the adove experiments </a></p>
+<p>[4] Sachit, <a href="https://sachit3022.github.io/other-blog/adv.py"> Code to the adove experiments </a></p>
