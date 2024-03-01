@@ -4,8 +4,8 @@ title = ' Coding 👨‍💻 Coffee ☕ Life'
 comments = false                            # disable comments for a specific page
 math = true      
 enableEmoji = true
-
-                         # enable KaTeX math typesetting for a specific pagebaseURL = "https://hugo-paper.vercel.app/"
+googleAnalytics = 'G-L8JC20DWR7'
+# enable KaTeX math typesetting for a specific pagebaseURL = "https://hugo-paper.vercel.app/"
 
 author = "Sachit gaudi"
 paginate = 3
