@@ -6,9 +6,8 @@ math = true
 pygmentsUseClasses=true
 pygmentsCodeFences=true
 tableOfContents = true
-[[resources]]
-  name = 'header'
-  src = 'IMG_0007.jpg'
+[header]
+  image= "IMG_0007.jpg"
 +++
 
 <img src="IMG_0007.jpg" />

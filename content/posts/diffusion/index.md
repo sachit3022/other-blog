@@ -1,7 +1,7 @@
 +++
 title = 'Generative models: VAE, Score, and Diffusion'
 date = 2024-04-29T17:37:27-04:00
-draft = false
+draft = true
 +++
 
 Diffusion models have been extensively studied, and there is a lot of literature available to learn from [\[1](#1) - [4\]](#4). In this blog we will try to explain intutively with the example of 8-mode gaussian generation.
