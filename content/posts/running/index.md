@@ -8,6 +8,7 @@ pygmentsCodeFences=true
 tableOfContents = true
 [header]
   image= "IMG_0007.jpg"
+  caption = "Run boy Run 🏃"
 +++
 
 <img src="IMG_0007.jpg" />
