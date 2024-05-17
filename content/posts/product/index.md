@@ -3,6 +3,8 @@ title = 'Notes on building a product in public'
 date = 2024-05-16T11:55:02-04:00
 draft = false
 +++
+
+
 ### Coming up with ideas for the types of products I want to build
 
 In recent times, there has been a lot of excitement about GenAI products. This is also one of my strong points, as I am well-versed in the literature. GenAI is very broad, and we would need to pick an area to focus on. 
@@ -28,3 +30,6 @@ Several research papers that I will implement have accompanying code, and their 
 ### Cherry-pick and create a demo
 
 To convince anyone—clients, customers, or YC—we need to demonstrate the success of the product.
+
+
+Display Image credit:  <a href="https://iconscout.com/icons/website-builder" class="text-underline font-size-sm" target="_blank">website builder</a> by <a href="https://iconscout.com/contributors/WHCompare" class="text-underline font-size-sm">Alexiuz As</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
