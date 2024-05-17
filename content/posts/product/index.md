@@ -32,4 +32,7 @@ Several research papers that I will implement have accompanying code, and their 
 To convince anyone—clients, customers, or YC—we need to demonstrate the success of the product.
 
 
-Display Image credit:  <a href="https://iconscout.com/icons/website-builder" class="text-underline font-size-sm" target="_blank">website builder</a> by <a href="https://iconscout.com/contributors/WHCompare" class="text-underline font-size-sm">Alexiuz As</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
+
+### References
+
+Display Image on about page credit :  <a href="https://iconscout.com/icons/website-builder" class="text-underline font-size-sm" target="_blank">website builder</a> by <a href="https://iconscout.com/contributors/WHCompare" class="text-underline font-size-sm">Alexiuz As</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
