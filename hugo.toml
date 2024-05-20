@@ -8,7 +8,7 @@ googleAnalytics = 'G-L8JC20DWR7'
 # enable KaTeX math typesetting for a specific pagebaseURL = "https://hugo-paper.vercel.app/"
 
 author = "Sachit gaudi"
-paginate = 4
+paginate = 10
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
