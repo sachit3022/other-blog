@@ -5,11 +5,13 @@ comments = false                            # disable comments for a specific pa
 math = true      
 enableEmoji = true
 googleAnalytics = 'G-L8JC20DWR7'
+
 # enable KaTeX math typesetting for a specific pagebaseURL = "https://hugo-paper.vercel.app/"
 
 author = "Sachit gaudi"
 paginate = 10
 DefaultContentLanguage = "en"
+contentDir = "content/"
 enableInlineShortcodes = true
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
