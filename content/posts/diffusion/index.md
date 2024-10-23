@@ -1,13 +1,16 @@
 +++
-title = 'Generative models: VAE, Score, and Diffusion'
-date = 2024-04-29T17:37:27-04:00
-draft = false
+author = "Sachit gaudi"
+title = "Think Diffusion! Think Probability: A probablistic perspective of diffusion models"
+date = "2024-10-09"
+description = "Solving TikTok coding questions"
 math = true
 pygmentsUseClasses=true
 pygmentsCodeFences=true
 tableOfContents = true
 +++
 
+[Still writing the blog yet to complete]
+<!-- 
 The goal of this blog post is understand Image editing. The problem we want to solve is simple. Replace Y in X with Z. This problem solves pain for many e-commerce product marketers. Big power houses like Nike, does not shoot the ads for all the variants. Can we try new variant of the shoe on the model?
 <table><tr>
 <td> <img src="variants.png" alt="Drawing" style="width: 350px;"/> </td>
@@ -16,14 +19,12 @@ The goal of this blog post is understand Image editing. The problem we want to s
  </caption>
 </table>
 
-We will solve this problem with DreamBooth[\[6\]](#6) and SDEdit[\[7\]](#7), both of them are guided diffusion techniques. The primary purpose of this blog is to educate on diffusion models with focus on implementation.
+We will solve this problem with DreamBooth[\[6\]](#6) and SDEdit[\[7\]](#7), both of them are guided diffusion techniques. The primary purpose of this blog is to educate on diffusion models with focus on implementation. ### Generative modelling-->
 
 
-### Generative modelling
+<!-- Generative modeling is becoming increasingly popular. ChatGPT, which uses masked language modeling for training, has taken the world by storm. Similarly, DALL-E can create realistic images by being trained through the diffusion process.
 
-Generative modeling is becoming increasingly popular. ChatGPT, which uses masked language modeling for training, has taken the world by storm. Similarly, DALL-E can create realistic images by being trained through the diffusion process.
-
-The cat sat on the mat => The cat [MASK] on the mat. The task given to the GPT is to predict what goes in [MASK]. The model ( a function f ) is trained on many such sentences. Once you give "The cat", model will start generaing the next word. Suppose the next likely word is "slept" and this process continues auto regresively till it generates "The cat slept on the mat [EOS]"
+The cat sat on the mat => The cat [MASK] on the mat. The task given to the GPT is to predict what goes in [MASK]. The model ( a function f ) is trained on many such sentences. Once you give "The cat", model will start generaing the next word. Suppose the next likely word is "slept" and this process continues auto regresively till it generates "The cat slept on the mat [EOS]" -->
 
 <table  align="right" style="width: 150px;height: 75px;"><tr>
 <td> <img src="image.png" alt="Drawing" style="width: 100px;"/> </td>
@@ -40,12 +41,16 @@ We can express this as follows: for a random variable $z$ with a known distribut
 
 Suppose if we want to generalise sampling from gaussian instead of uniform mentioned above, we can apply $y = \phi_{unk}^{-1}(\phi_n(x))$, where $x \sim \mathcal{N}(0,1)$ and $\phi_n(\cdot)$ is cdf of unit normal. So our goal is to learn $\hat{f} = \phi_{unk}^{-1}(\phi_n(\cdot))$
 
+We will be covering VAE, score and Denoising diffusion (DDPM) in this blog. The overarching idea is the same from the three techniques. We will first cover base VAE, and extend it to higerarchial vae. and then show that score based models are higerarchial VAEs with a fixed functional form for forward process given by $f(t)$ and $g(t)$ and the solution is equivalent to solving an SDE. DDPM is a simpler version of score modelling by fixing $f(t) = \beta_t$ as mentioned in [\[8\]](#7)
+### VAE 
+We will explain VAE and 
+
 
 ### Diffusion Models
 
 Diffusion models have been extensively studied, and there is a lot of literature available to learn from [\[1](#1) - [4\]](#4). Generally, diffusion is explained theoricatlly and directly moved to a complex problems. However, in this blog we try to explain diffusion on toy problems. 
 
-The problem of Image Editing is big to solve. We will break the problem into smaller problem. First, Can we generate the samples from the 8-mode gaussian ( pdf of the distribution is as described below). As the data is 2 diamensional it is easy to visualise and understand the diffusion process. Then we move onto generating digits with a respective color. Then given a style of a digit and color of the digit model should try to generate such a digit. Once we are able to solve the problem of generating a digit with a color we can solve the problem of Image editing with scaling the data and model.
+First, Can we generate the samples from the 8-mode gaussian ( pdf of the distribution is as described below). As the data is 2 diamensional it is easy to visualise and understand the diffusion process. Then we move onto generating digits with a respective color. Then given a style of a digit and color of the digit model should try to generate such a digit. Once we are able to solve the problem of generating a digit with a color.
 
 
 ![Diffusion Evolution](density_evo.gif)
@@ -54,8 +59,8 @@ The problem of Image Editing is big to solve. We will break the problem into sma
 
 In this section, we briefly cover what is included in `score.py`. This section contains some math. We will try to cover the preliminaries and do our best to explain things visually.
 
-
-
+We add noise in a perticular way.
+$x_t = \sqrt{\alpha_t}x_0 +  \sqrt{1- \alpha_t}z$, where $z \sim \mathcal{N}(0,1)$
 
 
 
@@ -91,3 +96,4 @@ They however used VQVAE intead of VAE. The rest architecture will remain the sam
 
 <a id="7">[7]</a> Khanh Nguyen, MTI Technology. https://medium.com/mti-technology/how-to-generate-gaussian-samples-347c391b7959
 
+<a id="8">[7]</a> Khanh Nguyen, MTI Technology. https://medium.com/mti-technology/how-to-generate-gaussian-samples-347c391b7959

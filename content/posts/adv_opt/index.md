@@ -34,8 +34,8 @@ Similar to the <a href='https://en.wikipedia.org/wiki/Evidence_lower_bound'>Evid
 <center>
 <span id='fig1' style="align-content-center">
 <figure>
-  <img src="https://kivanccakmak.com/posts/math/jensens_inequality/img/concave.png"  alt="Concave" >
-  <figcaption>Fig.1 Visualisation of jensen's inequality for Concave function <a href= "https://kivanccakmak.com/posts/math/jensens_inequality/img/concave.png">credit</a> </figcaption>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/ConvexFunction.svg/2880px-ConvexFunction.svg.png"  alt="Concave" >
+  <figcaption>Fig.1 Visualisation of jensen's inequality for Concave function <a href= "https://en.wikipedia.org/wiki/Jensen%27s_inequality">credit</a> </figcaption>
 </figure>
 </center>
 $\log \sum_{i} e^{a_i^Tx +b_i} \ge \sum_{i} \log e^{a_i^Tx +b_i} = \sum_{i} a_i^Tx +b_i$
