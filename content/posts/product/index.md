@@ -27,10 +27,9 @@ The best way to learn is to have skin in the game. Now that we have narrowed dow
 
 Several research papers that I will implement have accompanying code, and their models are public - [DDPM](https://arxiv.org/pdf/2006.11239), [Stable Diffusion](https://stability.ai/news/stable-diffusion-v2-release), [DreamBooth](https://dreambooth.github.io/), [SDEdit](https://arxiv.org/pdf/2108.01073). The challenge lies in combining them. I will note the implementation and insights on blogs on the respective topics.
 
-### Cherry-pick and create a demo
+### Dreambooth and Text Inversion work like magic
 
-To convince anyone—clients, customers, or YC—we need to demonstrate the success of the product.
-
+Update 23-oct 2024: Due to my focus on the ICLR submission it's been 3 months I have not worked on this product. I will work on it from Decemeber.
 
 
 ### References
