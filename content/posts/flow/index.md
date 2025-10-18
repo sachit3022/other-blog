@@ -7,6 +7,7 @@ math = true
 pygmentsUseClasses=true
 pygmentsCodeFences=true
 tableOfContents = true
+draft = true
 +++
 ### Brief introduction to flow models
 The objective of the generative models is to generate samples from the 
