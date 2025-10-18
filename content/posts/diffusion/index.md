@@ -7,9 +7,36 @@ math = true
 pygmentsUseClasses=true
 pygmentsCodeFences=true
 tableOfContents = true
+draft = true
 +++
 
 [Still writing the blog yet to complete]
+
+Structure:
+    what are generative modes? You should be able to sample from p(x)
+    How are you sampling from gaussian? [ Sample from inverse of CDF ]
+    However for the images you have no idea of probability therefore Inverse CDF will not work
+    How do model probability if you have samples from the distribution but dont have the formulation of the distribution
+    VAE is one idea where you learn and we will see VAE is a special case of diffusion
+    Other idea is GANs, (why dont GAN's dont work) [ perceptual loss is added but why? ( need to read more ) ] 
+    Diffusion
+        Lil'log has convered diffusion, but what you will learn is mostly from the Variantial loss perspective
+        Energy based models which model probability as P(x)  = E
+        Modelling Z can be avoided by learning score
+        but remember the goal is that we need to sample from score. How do you do it? We leverage Langevin dynamics. Does VAE model score?
+        what are the current works that use the probability perspective?
+            Classifier-free guidance 
+            Our work
+            Textual inversion is a form of negation. 
+            
+             
+        
+
+
+
+
+
+
 <!-- 
 The goal of this blog post is understand Image editing. The problem we want to solve is simple. Replace Y in X with Z. This problem solves pain for many e-commerce product marketers. Big power houses like Nike, does not shoot the ads for all the variants. Can we try new variant of the shoe on the model?
 <table><tr>

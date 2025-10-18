@@ -1,7 +1,7 @@
 +++
 title = 'Notes on building a product in public'
 date = 2024-05-16T11:55:02-04:00
-draft = false
+draft = true
 +++
 
 
