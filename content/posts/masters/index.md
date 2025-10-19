@@ -19,11 +19,13 @@ It took me two and a half years to graduate — longer than usual — but I’d 
 
 ### Why do I want to pursue a Masters degree?
 
+
 Everyone should have an answer to this question. Even if you don’t know every detail at the start, you should have a guiding goal — a north star you want to reach. For me, that goal was to write a paper like [this](https://arxiv.org/pdf/2010.02650) EMNLP paper I came across during an oral talk at the conference. What fascinated me wasn’t the final result, but the way the author reasoned through the problem to arrive at a solution.
 
 If you’re lucky, you might discover your purpose early. But for me, it took a mix of exploration and exploitation. In my case, I read widely across economics, mathematics, design, and machine learning. I explored many resources available — attending [IIIT hyderabad summer school](https://cvit.iiit.ac.in/summerschoolseries/), earning ML certification from  [IIT KGP](https://cvit.iiit.ac.in/summerschoolseries/), joining paper-reading sessions, and online courses. That’s what ultimately led me toward research and the decision to pursue a master’s degree.
 
 ### Reasons to consider enrolling in a Masters program
+
 
 **Dedicated time** to explore what you think you love. To explore any topic deeply—be it research or learning a new skill—allocating dedicated time greatly increases the chances of success in your pursuit. By enrolling in a master’s program, you are intentionally setting aside that time, thereby increasing your chances of building a career around what you truly love.
 
@@ -45,10 +47,10 @@ If you already have all of these—freedom, time, access to great mentors, and t
   <!-- Image -->
   <img src="paths.png"
        alt="Master’s Done Right: Lessons for a Joyful and Successful Journey"
-       style="width:60%; max-width:600px; height:auto; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+       style="width:60%; max-width:550px; height:auto; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
 
   <!-- Quote -->
-  <div style="flex:1; text-align:right; font-style:italic; color:#444; max-width:300px;">
+  <div style="flex:1; text-align:right; font-style:italic; color:#444; max-width:500px;">
     <p style="margin:0; font-size:1rem; line-height:1.5;">
       “Two roads diverged in a wood, and I—<br>
       I took the one less traveled by,<br>
@@ -73,122 +75,115 @@ When choosing projects, avoid the common pitfalls:
 
 These projects are good practice and earn solid grades, but they rarely contribute anything new to the community. If you work on a typical course project, no one will remember it — not even your professor. Such projects are rarely revisited and are often discounted during PhD admissions or job interviews. 
 
-So how should you pick a project? 
-**Design your project as a piece of a larger research question** When you do that, your audience naturally expands — it’s no longer just your professor, but the broader research community. What truly matters is working on a problem for a long time. Research is, at its core, a long and evolving project. Almost every meaningful research idea begins as something small — a class project, a weekend curiosity — and grows deeper as you continue to explore it. The more you question, refine, and iterate, the more original and interesting your work becomes.
+So how should you pick a project?  **Design your project as a piece of a larger research question** When you do that, your audience naturally expands — it’s no longer just your professor, but the broader research community. What truly matters is working on a problem for a long time. Research is, at its core, a long and evolving project. Almost every meaningful research idea begins as something small — a class project, a weekend curiosity — and grows deeper as you continue to explore it. The more you question, refine, and iterate, the more original and interesting your work becomes.
 
 Case Study: My own research journey started in the most ordinary way — with a class assignment. My advisor was teaching Score-Based Generative Models, and the assignment was to implement a simple version of one. After finishing the assignment, I was curious on how well score based generative models generalize? —  a question closely tied to my broader research interest in generalization. Initial experiments revealed that these models don’t generalize well. From there, the solution emerged naturally from understanding why they fail. In fact, most of the later experiments grew directly from a fork of the base code provided for that original assignment.
 
-
-### Research huh!
-
-Skills that ~~makes you a great scientist~~ you learn while working on a research project:
-1. Developing a taste of what problems are worth solving?
-2. How to generate ideas and see them to execution?
-3. How to critique ideas?
-4. How to prioritize ideas?
-5. How do you navigate during uncertain times?
-6. How to communicate effectively?
-7. How to own a project end to end?
-
-Whether you apply to PhD or pursue industry route, these skills are extremely valuable. If your path is to do a PhD, you have no option but to try your luck at research. If you aim for industry, these same skills, if mastered, help you stand out and land exceptional roles.
-
-Case Study: I landed multiple job offers. In my experience, companies have 2 critical rounds of interviews, although they are called with different names
-1. Breadth + Reasoning
-2. Depth 
-Some examples questions I was asked as a part of Breadth + Reasoning
-> Can you improve planning in autonomous driving cars? 
-> Given a robot build a 3D reconstruction of a house and design an optimal path to traverse the entire house? 
-> How do you generate social media feeds to drive users to a goal? 
-
-These are very open-ended research questions. For example, if you are solving a problem of goal driven social media. You can formulate the problem as a sequence of next post prediction given the user context. You can formulate it as a next token prediction in LLMs. As the goal is not differentiable, the reward from the goal ( visiting a store offline ) can be formulated as a RL problem. 
-
-The Depth Round is very straightforward; pick one of the projects and explain it to me. You don't need 100 project, you need one that you can explain in it to very detail. The deeper and clearer the problem and the solution the better. Naturally research will give you an edge.
-
-So you are convinced that research is the way to go So now getting into details
  
-How to pick a School? 
+### How to Choose the Right School
 
-Pick the school with higher rankings on csrankings.org in your field of study. 
-> The better the school, the higher the opportunities to succeed. For example, you have a wide range of professors and problems to pick from. If you don't like a professor or problem, you can switch.
-> Reputation of the school matters a lot more than you think,  hiring trends of college grads also tend to support this hypothesis. 
-Pick the school with a large ratio of PhD students to Masters students. This is a signal that school is serious about research and does not treat masters as a cash cow. You will also find many opportunities for research and teaching with less competition. 
+Pick a school with the high ranking on [csrankings](https://csrankings.org/) in your field of study.
 
-However, the application process to a masters program is random. You won't end up getting what you want. However, to improve the odds, have an honest SOP and reach out to the professors in addition to submitting applications.
+The higher the ranking, the greater your chances of success — both in research and in landing a good job. You’ll have a wider range of professors and problems to choose from, and if a particular advisor or topic doesn’t fit, you can switch. The school’s reputation also matters more than you think; [hiring trends](https://anandbhattad.github.io/blogs/jr_grads.html) of graduates consistently reflect this
 
-Case Study:  Most top schools reject me, but Michigan State accepted me.  MSU is a unique school with a very good ranking in Computer Vision, and has a high ratio of PhD students to Masters ~1.0. If you consider specialization in Computer Vision MSU makes a very good case. 
+Also, look for a school with a high ratio of PhD students to master’s students. That’s a strong signal the program values research and doesn’t treat the master’s degree as a cash cow. In addition, you’ll find more opportunities for research and teaching with less competition.
 
+The application process for master’s programs, however, can be unpredictable. You may not end up exactly where you expect. To improve your odds, write an honest statement of purpose and reach out to professors directly instead of relying solely on your online application.
 
-## What ~~professor~~ lab to join?
+Case Study: Most top schools rejected me, but Michigan State University (MSU) accepted my application. MSU turned out to be a great fit — it’s well-ranked in Computer Vision and has a high PhD-to-master’s ratio (about 1.0). If you are consider specialization in Computer Vision, MSU makes a very good case.
 
-Karpathy, in his blog has listed all the factors to consider as an Advisor. Most apply to the Masters student, but some of the factors I want to highlight and need to think differently for a masters student.  
+### Which ~~Professor~~ Lab Should You Join?
 
-Labmates: This is the most important, especially if you are a masters student. The most you are gonna learn and spend time with is your labmates. So pick a lab which has the most smart and helpful folks. If there is a tradeoff between smart and helpful, always pick the helpful bunch. In such a lab, ideas flow openly and you can latch onto some ideas and connect some dots. You can also  learn the research process,  i,e how vague thoughts get converted to a publication. 
+Karpathy, in his [blog](https://karpathy.github.io/2016/09/07/phd/), outlines several factors to consider when choosing an advisor. Most of them apply to master’s students as well, but some are more important.
 
-Case stdy of hy lab mates matter;
+**Helpful Labmates:** This is the most important, especially if you are a masters student. The most you are gonna learn and spend time with is your labmates. So pick a lab which has the most smart and helpful folks. If there is a tradeoff between smart and helpful, always pick the helpful bunch.
 
-Interest and style of problems: Due to the short duration of masters you can't change the style of the lab, you better choose the lab that aligns with you. Each and every lab has published papers, Does any of the papers excite you or wish you to write a paper like it. the more such papers by the group the better. The excitement can come from exact problems being solved or the style problem has been approached or for some other reason you loved the paper. 
+Case study: 
+My labmates were the single most important factor in my success. My presentation and articulation skills improved simply by observing them — how they structured their presentations and discussed ideas. When my writing was weak, they rewrote sections and explained why their version worked better. They shared resources freely, and when I was stuck on a proof, they’d chime in to help me complete it.
 
-Case Study: I choose Dr. Boddeti’s lab due to the emphasis on scientific thinking. I decided to hang out in the lab, although I was fired, because my large chunk of learning at MSU was from my labmates.
-
-Lead vs Follow: My first question with my advisor was “Will you work on something independently or collaborate with one of the students? If I were you, I would choose the first one.” So I would reciprocate the same advice for the following reasons. 
-You get to interact with professors, who are a well trained version of a PhD student Freedom to pursue interests you care about. PhD students are trying to establish their niche so if your interests diverge, you are on your own as PhD students are not knowledgeable in the research process or care about other areas. On the other hand professors are more experienced in guiding you with the research process and in general professors are a better discriminator of your idea.
-A recommendation letter personally from the professor is of immense value. Although this is a derivative rather than something you plan on.
-Caveat: Professors are not very hands on and will give you a very high level and you don’t operate at the same level as them. So you need to work hard on your communication. 
-
-### Advice to succeed in your research endeavor 
-
-**Nothing beats hard work**
-
-	I am an ordinary student. My engineering GPA is 7.30 and barely made it to a Masters’ program. On the contrary my labmates were extremely talented, top of the class with GPA of at least 9.0 and very good scientific contributions. The only way I was closer to my dreams is by working extremely hard. There were months with just 3 hours of sleep. I barely took a holiday, I showed up every single day and made small progress in the direction of understanding the problem and that made the difference.  Even if ideas fail just show up every single day, It does not make any sense in the 
-
-Case study; I have tried 3 different problem statements to tackle, 1. Fairness, 2. Unlearning, 3. Adversarial optimization. They are sort of inter-connected and fall under the general umbrella of Generalization. I could not come up with some different ideas. 
-
-There are no shortcuts, you have to work extremely hard to make progress. Smart work is an overrated word. In my opinion, if you add hours into doing something, slowly you get smart and the work you do eventually becomes smarter. 
-
-**Own your research**
-
-Most masters think it is the professor's research. To spoil it for you It’s not, the professor does not care about you or your research endeavour. It is your responsibility to solve the problem. Professors are already swamped with deadlines. Why should the professor give you his precious time?  you are competing for his/her attention so you have to fight for his attention. Treat you as the one leading the research project and the professor is there to help you in your journey. ( Read you and your research )
-
-Writing and communication is key to success
-
-I can't emphasize enough how important communication skills are. They are needed not just for research but for all aspects of life. By Communication I don't mean language, more of a story telling. To this day, I struggle with this, hoping to improve it. Maintain a log or running latex document and just dump your ideas, theorems, proofs, code links you have wriitte  or notability if you are ipad person.
-
-**Don't work solo**
-Work with a PhD student in the lab, since this would be your first research paper, there are some formulae that you need to learn to be successful. I made a mistake of not collaborating with PhD 
-How to structure your thought process. 
-Literature review: You will not know some literature, they will help you with a few seed papers. 
+On the contrary, once I asked someone incredibly talented for a small piece of help. The conversation went nowhere, and I was soon left on my own — losing valuable time in a crucial phase of my project. So, before joining a lab, try to have a conversation with one of the lab members. If they don’t have few minutes for you, run the other way.
 
 
-They have already seen ideas for publication, they know the process to make it as a publication. 
-3. Finally,  you will get a companion, who you can discuss  the approach regular and most of my ideas were refuted in the process, because I cant convince someone and they can cover your blind spots that you can’t spot before some reviewer raises them. 
-4. Sometime you will reach a mental block, they will add insights and releases from it.
-5. Sometimes you spend going down a rabbit hole only to realize later that you you missed a small logic train. So as you are communicating, you will make your hypothesis solid and don't end up wasting 2 days. 
-They will help you with your weakest skill 
+**Interest and Style of Problems:** Because a master’s program is short, you won’t have time to change the lab’s research direction or style. It’s better to choose a lab that already aligns with your interests and way of thinking. Every lab has published papers — read them. Do any of them excite you? Can you imagine yourself writing a paper like that? The more such papers you find, the better the fit. I chose to join Dr. Boddeti’s lab for its strong culture of scientific thinking and rigor.
 
-**Review papers**
-	> Researchers who know you even though you don’t have a paper can suggest you as a reviewer
-> During reviewing you tend to question everything written by the author, later you can compare if you had any blind spot from the other reviews written for that paper. Questioning research works is an important skill because asking the right question is almost 80% of the job done. 
+**Lead vs. Follow** My advisor’s first question to me was, “Will you work on something independently, or collaborate with one of the PhD students? If I were you, I’d choose the first one.” I now pass on the same advice
+
+Working independently allows you to interact directly with your professor — essentially a more experienced and refined version of a PhD student. Professors have broader perspective and a sharper sense for which ideas are worth pursuing.  PhD students, on the other hand, are often focused on building their own niche. If your interests diverge from theirs, you might find little alignment or guidance. They may also lack the experience to mentor you through the research process beyond their immediate area.
+
+Professors often recognize your skill gaps early and can connect you with others who can fill in those gaps.
+
+Another benefit of working closely with a professor is the possibility of a strong, personal recommendation letter. Although this is rather a derivative  than something you plan on.
+
+Caveat: Professors tend to be high-level thinkers. They won’t hand you step-by-step instructions, and you probably won’t operate at their level initially. This makes clear communication essential.
 
 
-**Mental and physical health**
-	
-Research is a personal journey. Once you complete a research project you are not the same person that has started. No one cares about your success, or your battles. You will fail many many times and you will learn a lot more from it. Don't take things personally, Take learnings and keep working on things that you believe are true. 
+### Advice for Succeeding in Your Research Endeavor
 
-Case study: I have failed in 3 research endeavours, I was unable to generate ideas and my ideas were outdated and was bad at communication. These were the reasons that got me fired. Rather than crying about it, I was back the next day and realized the mistakes and continued to make progress. 
+**Nothing Beats Hard Work:**
+There are no shortcuts in research. My undergraduate GPA was just 7.3, and I barely made it into a master’s program. The only way I got closer to my dreams was by showing up every single day and working hard. Even when my ideas failed, I kept making small progress toward understanding the problem. It made little sense at the time, but looking back, the effort compounded into something meaningful.
 
-**Luck is a big factor**
+**Own Your Research:**
+Most master’s students think it’s the professor’s research. To spoil it for you — it’s not. The professor doesn’t care about your project as much as you do, nor should they. It’s your responsibility to solve the problem. Why should the professor give you their precious time? They’re already swamped with deadlines and commitments. You’re competing for their attention, so you have to earn it.
 
-My entire research journey is attributed to pure luck, attributing to anything other than that is stupidity. 
-Luck:
-Helpful Labmates: I was lucky to find them
-Diverse lab and lot of open problems floating around for me to pick out
-Deep Learning course
-Advisor: My advisor asked me the right questions, answering them was much easier.
-My advisor saw me struggling and assigned one of the PhD student.
+Treat yourself as the one leading the research project — the professor is there to guide you. Take ownership. Read [You and Your Research by Richard Hamming](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html) which captures what it truly means to do research.
+
+**Writing and Communication Are Key**
+I can’t emphasize enough how important communication skills are. By communication, I mean storytelling — connecting ideas, motivation, and results. To get better, write regularly. Maintain a running log or LaTeX document where you freely dump your ideas, proofs, and code links. To this day, I still struggle with this, but I keep trying to improve.
+
+**Collaborate early** — ideally with a PhD student. They’ve already seen what a successful publication looks like, can guide your literature review, and help structure your thought process. You’ll also gain a companion to bounce ideas off. Many of my ideas were refined — or refuted — through such discussions. Every time I failed to convince someone, it revealed a blind spot I hadn’t seen, most likely reviewers will also spot them. In addition, When you hit mental blocks, collaboration adds new insights and prevents wasted effort down wrong paths.
+
+**Review papers**, even before publishing your first paper. You can contribute as a reviewer (through recommendation by someone who knows your work). Reviewing teaches you to question every claim, identify gaps, and recognize what makes research convincing. In many ways, learning to ask the right questions is 80% of doing good research.
+
+**Mental and physical health** Research is a deeply personal journey — you won’t be the same person who started it.
+You’ll fail often, sometimes feel isolated, and no one will truly understand your internal battles. Don’t take setbacks personally;  Take learnings and keep working on things that you believe are true. Use the counselling your university offers, but also step away when needed.
+
+I have failed in 3 research endeavours. I was unable to generate ideas, and the ideas I did have were outdated. I was also bad at communication. These were the reasons that got me fired. So it is very natural to feel low — you are alone in these battles, and you alone can keep your mental health alright.
+
+Physical fitness improves mental clarity. For me, going to the gym or playing a sport 3–4 hours a week dramatically improved focus and resilience.
+
+
+### Luck is a big factor
+
+My entire research journey can be attributed to pure luck. Attributing it to anything else would just be pure stupidity.
+
+I was lucky to find helpful labmates who cared enough to guide me. The lab itself was diverse, with so many open problems floating around that I could just pick one and start exploring. My role was mostly to hang around, listen, and connect two areas of research that two PhD students were working on.
+
+I thought I already knew deep learning. My advisor, however, suggested that I take his Deep Learning course. I enrolled at the very last moment — and that turned out to be one of the best decisions I made.
+
+When he saw me struggling at writing, he assigned one of the PhD students to help me, and he wrote the entire publication. On the other hand, my advisor, at every step, asked the right questions; all I did was diligently execute things.
 
 
 ### Fall in love
 
-I would encourage you to fall in love, particularly if you are doing a thesis-based master’s. It might sound unrelated to academics, but it can indirectly help you succeed in them.
-You can talk to your partner about research, and sometimes that will help you think more clearly and communicate better. At other times, it helps to take your mind off research completely, explore the city together, or do something simple and monotonous. It’s the mental reset your brain didn’t know it needed.
-Sometimes, you need emotional support with your context to navigate highs and lows of the research career. An added benefit is having a working girlfriend who can look after the poor researcher. My girlfriend supported me at a crucial point, allowing me to save time and mental energy that would have gone into a part-time job.
+It might sound unrelated to academics, but it can indirectly help you succeed in them.
+
+You can talk to your partner about research, and sometimes that will help you think more clearly and communicate better. At other times, it helps to take your mind off research completely, explore the city together, or do something simple and monotonous. It’s the mental reset your brain didn’t know it needed. Sometimes, you need emotional support with your context to navigate highs and lows of the research career.
+
+
+### Derivatives of Research
+
+Skills that ~~make you a great scientist~~ you learn while working on a research project:
+1. Developing a taste for what problems are worth solving.
+2. How to generate ideas and see them to execution.
+3. How to critique ideas—yours and others’.
+4. How to prioritize ideas when everything feels important.
+5. How to navigate during uncertain times.
+6. How to communicate effectively.
+7. How to own a project end to end.
+
+Whether you pursue a PhD or an industry role, these skills are immensely valuable. If your path is a PhD, you have no option but to try your luck at research. If you aim for industry, the same skills make you stand out and land exceptional roles.
+
+In my experience, companies usually have two main rounds of interviews (though they might call them differently):
+1. Breadth + Reasoning
+2. Depth
+
+Examples of Breadth + Reasoning include,  “How would you improve planning in autonomous vehicles?” “How would you generate social-media feeds to drive users toward a goal?”
+
+These are open-ended research-style questions. For example, if you’re solving the problem of goal-driven social media, you can think of it as a sequence of next-post prediction given user context—similar to next-token prediction in LLMs. Since the goal is not differentiable, you could formulate the reward as an RL problem. It’s really about connecting the question to what you already know, thinking broadly, and reasoning through your thought process step by step. Reasoning skills come in handy if you work on research.
+
+The Depth round is straightforward: pick one substantial project and explain it with clarity. You don’t need 100 projects—you need one that you truly understand end to end. The deeper your understanding and the clearer your explanation, the better. Research naturally gives you that edge.
+
+## Concluding thoughts
+
+I wish you all the luck in your own research journey. It’s a path filled with uncertainty, but also discovery and deep satisfaction.
+
