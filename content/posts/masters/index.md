@@ -71,7 +71,7 @@ So how should you choose your courses? The purpose of a course is to find your c
 When choosing projects, avoid the common pitfalls:
 
 1. Most projects last only a few weeks and are soon abandoned.
-2. Many projects focus are superficial — like running all algorithms in SciPy and announcing that Random Forests outperform the rest, or training Faster-RCNN for hand detection.
+2. Many projects are superficial — like running all algorithms in SciPy and announcing that Random Forests outperform the rest, or training Faster-RCNN for hand detection.
 
 These projects are good practice and earn solid grades, but they rarely contribute anything new to the community. If you work on a typical course project, no one will remember it — not even your professor. Such projects are rarely revisited and are often discounted during PhD admissions or job interviews. 
 
@@ -94,12 +94,12 @@ Case Study: Most top schools rejected me, but Michigan State University (MSU) ac
 
 ### Which ~~Professor~~ Lab Should You Join?
 
-Karpathy, in his [blog](https://karpathy.github.io/2016/09/07/phd/), outlines several factors to consider when choosing an advisor. Most of them apply to master’s students as well, but some are more important.
+Karpathy, in his [blog](https://karpathy.github.io/2016/09/07/phd/), outlines several factors to consider when choosing a advisor. Most of them apply to master’s students as well, but some are more important.
 
 **Helpful Labmates:** This is the most important, especially if you are a masters student. The most you are gonna learn and spend time with is your labmates. So pick a lab which has the most smart and helpful folks. If there is a tradeoff between smart and helpful, always pick the helpful bunch.
 
 Case study: 
-My labmates were the single most important factor in my success. My presentation and articulation skills improved simply by observing them — how they structured their presentations and discussed ideas. When my writing was weak, they rewrote sections and explained why their version worked better. They shared resources freely, and when I was stuck on a proof, they’d chime in to help me complete it.
+My labmates were the single most important factor in my success. My presentation and articulation skills improved simply by observing them — how they structured their presentations and discussed ideas. When my writing was weak, they not only rewrote sections but also explained why their version conveyed the ideas more effectively. They shared resources freely, and when I was stuck on a proof, they’d chime in to help me complete it.
 
 On the contrary, once I asked someone incredibly talented for a small piece of help. The conversation went nowhere, and I was soon left on my own — losing valuable time in a crucial phase of my project. So, before joining a lab, try to have a conversation with one of the lab members. If they don’t have few minutes for you, run the other way.
 
