@@ -148,9 +148,9 @@ My entire research journey can be attributed to pure luck. Attributing it to any
 
 I was lucky to find helpful labmates who cared enough to guide me. The lab itself was diverse, with so many open problems floating around that I could just pick one and start exploring. My role was mostly to hang around, listen, and connect two areas of research that two PhD students were working on.
 
-I thought I already knew deep learning. My advisor, however, suggested that I take his Deep Learning course. I enrolled at the very last moment — and that turned out to be one of the best decisions I made.
+I thought I already knew most of the deep learning. My advisor, however, suggested that I take his Deep Learning course. I enrolled at the very last moment — and that turned out to be one of the best decisions I made.
 
-When he saw me struggling at writing, he assigned one of the PhD students to help me, and he wrote the entire publication. On the other hand, my advisor, at every step, asked the right questions; all I did was diligently execute things.
+I was lucky to have a great advisor. When he saw me struggling at writing, he assigned one of the PhD students to help me, and he wrote the entire publication. On the other hand, my advisor, at every step, asked the right questions; all I did was diligently execute things.
 
 
 ### Fall in love
