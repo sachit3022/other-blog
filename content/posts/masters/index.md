@@ -135,11 +135,11 @@ I can’t emphasize enough how important communication skills are. By communicat
 **Review papers**, even before publishing your first paper. You can contribute as a reviewer (through recommendation by someone who knows your work). Reviewing teaches you to question every claim, identify gaps, and recognize what makes research convincing. In many ways, learning to ask the right questions is 80% of doing good research.
 
 **Mental and physical health** Research is a deeply personal journey — you won’t be the same person who started it.
-You’ll fail often, sometimes feel isolated, and no one will truly understand your internal battles. Don’t take setbacks personally;  Take learnings and keep working on things that you believe are true. Use the counselling your university offers, but also step away when needed.
+You’ll fail often, sometimes feel isolated, and no one will truly understand your internal battles. Don’t take setbacks personally;  Take learnings and keep working on things that you believe are true. When the need arises, use the counseling services your university offers.
 
 I have failed in 3 research endeavours. I was unable to generate ideas, and the ideas I did have were outdated. I was also bad at communication. These were the reasons that got me fired. So it is very natural to feel low — you are alone in these battles, and you alone can keep your mental health alright.
 
-Physical fitness improves mental clarity. For me, going to the gym or playing a sport 3–4 hours a week dramatically improved focus and resilience.
+Physical fitness improves mental clarity. For me, going to the gym or playing a sport 3–4 hours a week dramatically improved focus.
 
 
 ### Luck is a big factor
@@ -165,8 +165,8 @@ You can talk to your partner about research, and sometimes that will help you th
 Skills that ~~make you a great scientist~~ you learn while working on a research project:
 1. Developing a taste for what problems are worth solving.
 2. How to generate ideas and see them to execution.
-3. How to critique ideas—yours and others’.
-4. How to prioritize ideas when everything feels important.
+3. How to critique ideas.
+4. How to prioritize ideas.
 5. How to navigate during uncertain times.
 6. How to communicate effectively.
 7. How to own a project end to end.
